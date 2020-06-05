@@ -8,9 +8,5 @@
 #end
 
 def reverse_each_word_with_collect(string)
-  array = string.split
-  array.collect do |word|
-    word.reverse
-  end
-  return array.join()
+  string.split.collect { |word| word.reverse }.join()
 end
